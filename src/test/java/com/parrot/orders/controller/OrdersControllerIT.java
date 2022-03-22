@@ -42,14 +42,7 @@ import com.parrot.orders.service.security.JwtTokenProvider;
 public class OrdersControllerIT {
 
 	@Autowired
-	private MockMvc mockMvc;
-	
-	@Autowired
 	private JwtTokenProvider jwtTokenProvider;
-
-	private ObjectMapper objMapper = new ObjectMapper().setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
-
-	private User user;
 	
 	private OrderRequest orderRequest;
 	
@@ -71,7 +64,6 @@ public class OrdersControllerIT {
 	@Before
 	public void init() throws JsonProcessingException {
 		productsOrder = new ArrayList<>();
-		user = User.builder().email("test@parrot.com").name("Test Parrot").build();
 		productOrderOne = ProductOrderDto.builder().name("Coca cola").unitaryPrice(10.5).amount(2).build();
 
 		productOrderTwo = ProductOrderDto.builder().name("Taco Pastor").unitaryPrice(17.0).amount(10).build();

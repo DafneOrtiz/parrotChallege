@@ -46,10 +46,4 @@ public class AuthController {
             throw new BadCredentialsException("Invalid username/password supplied");
         }
     }
-    
-    @PostMapping("/api/logout")
-    public ResponseEntity<String> logout() {
-		SecurityContextHolder.getContext().setAuthentication(null);
-		return new ResponseEntity<>("Login successfully", HttpStatus.OK);
-    }
 }

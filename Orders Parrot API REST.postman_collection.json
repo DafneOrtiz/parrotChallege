@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "4f97f305-c53a-47f6-b0d7-6e2be15346ab",
+		"name": "Orders Parrot API REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"dafne.ortizavila@gmail.com\",\n    \"name\":\"Dafne Ortiz\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"dafne.ortizavila@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0NzkzODAxMCwiZXhwIjoxNjQ3OTQxNjEwfQ.ZGYgec2z4dPyGQnv9jXBc3GKYtQ_E5TyKp7Q4kthFMQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client_name\":\"Sarahi\",\n    \"total_price\":500.50,\n    \"products\": [\n        {\n            \"name\":\"Fanta\",\n            \"unitary_price\":\"11.30\",\n            \"amount\":\"7\"\n        },\n        {\n            \"name\":\"Tacos suadero\",\n            \"unitary_price\":\"10\",\n            \"amount\":\"10\"\n\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0NzkzODAxMCwiZXhwIjoxNjQ3OTQxNjEwfQ.ZGYgec2z4dPyGQnv9jXBc3GKYtQ_E5TyKp7Q4kthFMQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/product?initDate=2022-01-01&endDate=2022-04-03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "initDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-04-03"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
