@@ -53,7 +53,7 @@ public class ProductControllerIT {
 		HttpEntity<Map<String, Object>> entity = new HttpEntity<Map<String, Object>>(headers);
 
 		ResponseEntity<String> response = restTemplate.exchange(
-				createURLWithPort("/api/product?initDate=2022-01-01&endDate=2022-05-05"), HttpMethod.GET, entity,
+				createURLWithPort("/parrot/product?initDate=2022-01-01&endDate=2022-05-05"), HttpMethod.GET, entity,
 				String.class);
 
 		HttpStatus httpStatus = response.getStatusCode();

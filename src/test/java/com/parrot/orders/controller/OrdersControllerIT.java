@@ -95,7 +95,7 @@ public class OrdersControllerIT {
 		HttpEntity<OrderRequest> entity = new HttpEntity<OrderRequest>(orderRequest, headers);
 
 		ResponseEntity<String> response = restTemplate.exchange(
-				createURLWithPort("/api/order"),
+				createURLWithPort("/parrot/order"),
 				HttpMethod.POST, entity, String.class);
 
 		HttpStatus httpStatus = response.getStatusCode();

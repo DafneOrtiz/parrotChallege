@@ -69,7 +69,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0NzkzODAxMCwiZXhwIjoxNjQ3OTQxNjEwfQ.ZGYgec2z4dPyGQnv9jXBc3GKYtQ_E5TyKp7Q4kthFMQ",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0Nzk0NjA4NSwiZXhwIjoxNjQ3OTQ5Njg1fQ.AaRKJCNBoWkTTjXYh7N4Dhm_cOMmiWqvAvVEBS8YhWM",
 							"type": "string"
 						}
 					]
@@ -86,14 +86,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/order",
+					"raw": "http://localhost:8080/parrot/order",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"api",
+						"parrot",
 						"order"
 					]
 				}
@@ -108,7 +108,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0NzkzODAxMCwiZXhwIjoxNjQ3OTQxNjEwfQ.ZGYgec2z4dPyGQnv9jXBc3GKYtQ_E5TyKp7Q4kthFMQ",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZS5vcnRpemF2aWxhQGdtYWlsLmNvbSIsImlhdCI6MTY0Nzk0NjA4NSwiZXhwIjoxNjQ3OTQ5Njg1fQ.AaRKJCNBoWkTTjXYh7N4Dhm_cOMmiWqvAvVEBS8YhWM",
 							"type": "string"
 						}
 					]
@@ -116,14 +116,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/product?initDate=2022-01-01&endDate=2022-04-03",
+					"raw": "http://localhost:8080/parrot/product?initDate=2022-01-01&endDate=2022-04-03",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"api",
+						"parrot",
 						"product"
 					],
 					"query": [

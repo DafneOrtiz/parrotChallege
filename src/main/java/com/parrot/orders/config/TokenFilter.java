@@ -32,8 +32,8 @@ public class TokenFilter implements Filter{
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
-        boolean requireToken = req.getServletPath().contains("api");
-        if(false) {
+        boolean requireToken = req.getServletPath().contains("parrot");
+        if(requireToken) {
 	            String token = jwtTokenProvider.resolveToken((HttpServletRequest) req);
 	            boolean validToken = false;
 	        if (token != null ) {

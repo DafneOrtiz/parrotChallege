@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/product")
+@RequestMapping("/parrot/product")
 public class ProductsController {
 	
 	@Autowired
