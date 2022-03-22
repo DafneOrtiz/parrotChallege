@@ -38,6 +38,7 @@ _Para el caso de Windows es necesario que la variable de entorno de Maven esté 
 ```sh
     mvn test
 ```
+* [Postman collection](https://github.com/DafneOrtiz/parrotChallege/blob/main/Orders%20Parrot%20API%20REST.postman_collection.json)
 
 ## Contacto
 Dafne Ortiz Avila - dafne.ortizavila@gmail.com
