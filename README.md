@@ -17,29 +17,27 @@ _Para el caso de instalarse en Windows, es necesario tener dadas de alta las var
 Abajo podemos ver las instrucciones para instalar y configurar el proyecto. Este no tiene dependencias externas o de otros servicios
 
 1. Clonar el repo
-   
-sh
+   ```sh
     git clone https://github.com/DafneOrtiz/parrotChallege.git
-   
+   ```
 2. Instalar las dependencias
-   
-sh
+   ```sh
     mvn install
-   
+   ```
 
 ### Ejecución 💻💡
 
 Para levantar nuestro servicio RestAPI tenemos que abrir una terminal en la raíz de nuestro proyecto, y ejecutar la siguiente instrucción:
-sh
+```sh
     mvn spring-boot:run
-
+```
 _Para el caso de Windows es necesario que la variable de entorno de Maven esté en el PATH_
 
 
 ### Ejecución de Tests 📋
-sh
+```sh
     mvn test
-
+```
 
 ## Contacto
 Dafne Ortiz Avila - dafne.ortizavila@gmail.com
