@@ -7,6 +7,7 @@ Este proyecto es la implementación de una RestAPI con pruebas de integración y
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 * [H2](https://www.h2database.com/html/main.html) - Manejador de base de datos
 * [JWT](https://jwt.io/) - Json Web Token
+* [Sprin](https://jwt.io/) - Json Web Token
 
 ## Getting Started
 ### Pre-requisitos 📌
@@ -40,6 +41,11 @@ _Para el caso de Windows es necesario que la variable de entorno de Maven esté 
 ```
 * [Postman collection](https://github.com/DafneOrtiz/parrotChallege/blob/main/Orders%20Parrot%20API%20REST.postman_collection.json)
 
+* [Swagger](http://localhost:8080/swagger-ui/#/)
+
+```sh
+    /swagger-ui/#/
+```
 ## Contacto
 Dafne Ortiz Avila - dafne.ortizavila@gmail.com
 Project Link: [https://github.com/DafneOrtiz/parrotChallege](https://github.com/DafneOrtiz/parrotChallege)
